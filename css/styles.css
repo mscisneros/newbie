@@ -3,7 +3,7 @@ Author: Mario S. Cisneros, P: 469 484 6839
 Author URI: http://beta.mariocisneros.me/workbench/bootstrap/examples/newbie/
 CSS: Global Stylesheet
 Project: Bootstrap Web Hosting Example
-Last Modified Date: 6.28.2018
+Last Modified Date: 7.1.2018
 -------------------------------------------------------------- */
 
 body {
@@ -32,6 +32,16 @@ footer {
     background-color: #563d7c;
     color: #e7d7ff;
     padding: 1rem 0;
+}
+
+footer a {
+    color: #e7d7ff;
+    text-decoration: underline;
+}
+
+footer a:hover {
+    color: #b685ff;
+    text-decoration: none;
 }
 
 
@@ -109,12 +119,18 @@ footer {
     padding-left: 1rem !important;
 }
 
+#services .nav-link {
+    display: inline-block;
+}
+
 .navbar-light .navbar-nav .nav-link:focus,
 .navbar-light .navbar-nav .nav-link:hover {
     color: #563d7c;
     font-weight: 700;
 }
 
+/* Social
+------------------------------------------- */
 .social {
     background-color: #eee;
     font-size: 4rem;
@@ -150,6 +166,14 @@ footer {
 .social .fa-instagram:hover,
 .social .fa-youtube:hover {
     color: #5f5f5f;
+}
+
+.socket {
+    background-color: #fff;
+}
+
+.socket p {
+    margin-bottom: 0;
 }
 
 .welcome hr {
