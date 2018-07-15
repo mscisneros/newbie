@@ -21,6 +21,7 @@ h2 {
     color: #563d7c;
     font-family: garamond, georgia, serif;
     letter-spacing: 2px;
+    margin-bottom: 1rem;
 }
 
 h4 {
@@ -31,7 +32,7 @@ h4 {
 footer {
     background-color: #563d7c;
     color: #e7d7ff;
-    padding: 1rem 0;
+    padding: 2rem 0;
 }
 
 footer a {
@@ -90,7 +91,6 @@ footer a:hover {
 .fa-code {
     color: #e22919;
     font-size: 3rem;
-    padding-bottom: 1rem;
 }
 
 .orange {
@@ -170,6 +170,7 @@ footer a:hover {
 
 .socket {
     background-color: #fff;
+    padding: 1.5rem 0;
 }
 
 .socket p {
@@ -213,10 +214,13 @@ footer a:hover {
 }
 
 
-/*--- Bootstrap Padding Fix --*/
+
+
+
+/*--- Bootstrap Padding Fix --
 [class*="col-"] {
     padding: 1rem;
-}
+} */
 
 
 

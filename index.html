@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Newbie Web Hosting</title>
+    <title>Newbie Web Services</title>
 
     <!-- FAVICON -->
     <link rel="shortcut icon" href="/workbench/dist/images/favicon.ico">
@@ -27,14 +27,14 @@
             *** Color Schemes (navbar-light + bg-light): https://getbootstrap.com/docs/4.0/components/navbar/#color-schemes
             *** Sticky top: https://getbootstrap.com/docs/4.0/utilities/position/#sticky-top
         -->
-        <nav class="navbar  navbar-expand-md  navbar-light  bg-light  fixed-top"> <!-- navbar-expand-md breaks at 768 pixels -->
+        <nav class="navbar  navbar-expand-lg  navbar-light  bg-light  fixed-top"> <!-- navbar-expand-md breaks at 768 pixels -->
 
             <!-- .navbar first child element should always be either .container or .container-fluid -->
             <div class="container-fluid">
-                <a class="navbar-brand" href="index.html" title="Created by Mario Cisneros"><img src="img/logo.png" alt=""></a>
+                <a class="navbar-brand" href="index.html" title="Created by Mario Cisneros"><img src="img/logo.png" alt="" class="img-fluid"></a>
 
                 <!-- Toggle switch displays hamburger menu on smaller viewports, but hidden on large viewports -->
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler  mx-2" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
@@ -69,7 +69,7 @@
                 <img class="d-block w-100" src="img/carousel/background.png" alt="First slide">
                 <div class="carousel-caption">
                     <!--Display Headings: https://getbootstrap.com/docs/4.1/content/typography/#display-headings -->
-                    <h1 class="display-3">Newbie Web Hosting</h1>
+                    <h1 class="display-3">Newbie Web Services</h1>
                     <h2 class="py-4">Managed Cloud Services</h2>
 
                     <!-- Buttons: https://getbootstrap.com/docs/4.1/components/buttons/ -->
@@ -137,10 +137,11 @@
     </div>
 
     <!-- ABOUT SECTION: https://getbootstrap.com/docs/4.1/utilities/spacing/ -->
-    <div class="container-fluid  my-5  py-4" id="about">
+    <div class="container-fluid  my-lg-5  py-lg-5" id="about">
         <div class="row">
+            <!--Hiding Elements: https://getbootstrap.com/docs/4.1/utilities/display/#hiding-elements -->
             <div class="col-lg-6">
-                <img src="img/computer.jpg" class="img-fluid" alt="">
+                <img src="img/computer.jpg" class="img-fluid  d-none  d-sm-block" alt="">
             </div>
 
             <div class="col-lg-6">
@@ -164,7 +165,7 @@
     <hr class="my-4">
 
     <!-- SERVICES SECTION -->
-    <div class="container-fluid  py-4  my-5  mt-sm-0" id="services">
+    <div class="container-fluid  my-lg-5  py-lg-5" id="services">
         <div class="row">
             <div class="col-lg-6">
                 <h2 class="display-4">Services</h2>
@@ -192,19 +193,19 @@
             </div>
 
             <div class="col-lg-6">
-                <img src="img/desk.png" class="img-fluid" alt="">
+                <img src="img/desk.png" class="img-fluid  d-none  d-sm-block" alt="">
             </div>
         </div>
     </div>
 
     <!-- FIXED BACKGROUND -->
-    <div class="fixed-background-image"></div>
+    <div class="fixed-background-image  d-none  d-sm-block"></div>
 
     <!-- MEET THE TEAM & CARDS SECTION -->
-    <div class="container-fluid  my-5" id="team">
+    <div class="container-fluid  mt-lg-5  pt-lg-5" id="team">
         <div class="row  welcome  text-center">
             <div class="col-12">
-                <h2 class="display-4">Meet the Team</h2>
+                <h2 class="display-4  pb-4">Meet the Team</h2>
             </div>
         </div>
 
@@ -246,33 +247,32 @@
     </div>
 
     <!-- BOOTSTRAP SECTION -->
-    <div class="container-fluid  my-5">
+    <div class="container-fluid  my-lg-5  py-lg-5">
         <div class="row  text-center  welcome">
             <div class="col-12">
                 <h2 class="display-4">Site built with Bootstrap</h2>
-                <hr>
             </div>
 
             <div class="col-12">
-                <p class="lead">Bootstrap is an open source toolkit for developing with HTML, CSS, and JS to build responsive, mobile-first projects on the web.</p>
+                <p class="lead  pb-4">Bootstrap is an open source toolkit for developing with HTML, CSS, and JS to build responsive, mobile-first projects on the web.</p>
             </div>
         </div>
 
         <div class="row  text-center">
             <div class="col-xs-12 col-sm-12 col-md-4">
-                <i class="fa fa-code orange"></i>
+                <i class="fa fa-code  orange  pb-4"></i>
                 <h3>HTML5</h3>
                 <p>Built with the latest version of HTML5</p>
             </div>
 
             <div class="col-xs-12 col-sm-12 col-md-4">
-                <i class="fa fa-code purple"></i>
+                <i class="fa fa-code purple  pb-4"></i>
                 <h3>CSS3</h3>
                 <p>Built with the latest version of CSS3</p>
             </div>
 
             <div class="col-xs-12 col-sm-12 col-md-4">
-                <i class="fa fa-code blue"></i>
+                <i class="fa fa-code blue  pb-4"></i>
                 <h3>JavaScript</h3>
                 <p>Built with the latest version of ECMAScript 2017</p>
             </div>
@@ -280,7 +280,7 @@
     </div>
 
     <!-- SOCIAL MEDIA SECTION -->
-    <div class="container-fluid  mt-4  py-4  social"  id="connect">
+    <div class="container-fluid  py-5  social"  id="connect">
         <div class="row text-center">
             <div class="col-12">
                 <h2 class="display-4">Connect</h2>
@@ -319,7 +319,7 @@
                 </ul>
             </div>
 
-            <div class="col-md-12  col-lg-6  col-xl-2">
+            <div class="col-md-12  col-lg-6  col-xl-3">
                 <h4>Service Areas</h4>
                 <ul>
                     <li>Austin, Texas, 78610</li>
@@ -329,7 +329,7 @@
                 </ul>
             </div>
 
-            <div class="col-md-12  col-lg-6  col-xl-4">
+            <div class="col-md-12  col-lg-6  col-xl-3">
                 <h4>Tutorials</h4>
                 <ul>
                     <li><a href="https://www.youtube.com/watch?v=hnCmSXCZEpU" target="_blank">Free Crash Course | DesignCourse</a></li>
@@ -344,7 +344,7 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-md-12  text-center  socket">
-                <p>2018 &copy; Newbie Web Hosting</p>
+                <p>2018 &copy; Newbie Web Services</p>
             </div>
         </div>
     </div>
