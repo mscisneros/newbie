@@ -1,5 +1,4 @@
-# One-Page Bootstrap Web Services Site
-
+# One-Page Bootstrap Website
 * Published on Mar 14, 2018
 * Installed Git Plus in Atom
 
@@ -10,21 +9,17 @@ In addition, it further demonstrates how a company's website can be leveraged as
 
 ### Features:
 * Custom UI Flat Design
-* Conversion Process:
-  - Calls-to-Action
-  - Landing Pages
-  - Thank You Pages
-  - Social Media Sharing
-* Four Tier Pricing Options
+* Use of new card components
+* Carousel Slider
+* Social Media Sharing
+* Custom CSS file to override the default settings
 * Well-formed and Semantically Correct Markup
   - Bootlint
   - HTML5
 * Well-structured Information Architecture (IA)
 * Current Releases:
-  - Sass - 3.5.1
-  - bootstrap.min.css – v4.0.0-beta.3
-  - mdb.min.css – 4.4.3
-  - jquery.min.js – 3.2.1
-  - popper.js - 1.12.9
-  - bootstrap.min.js – v4.0.0-beta.3
-  - mdb.min.js – 4.4.1
+  - bootstrap.min.css – v4.1.0
+  - fontawesome - v5.1.0
+  - jquery.min.js – 3.3.1
+  - popper.js - 1.14.0
+  - bootstrap.min.js – v4.1.0
