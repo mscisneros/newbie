@@ -21,10 +21,10 @@ In addition, it further demonstrates how a company's website can be leveraged as
   - HTML5
 * Well-structured Information Architecture (IA)
 * Current Releases:
-1. Sass - 3.5.1
-2. bootstrap.min.css – v4.0.0-beta.3
-3. mdb.min.css – 4.4.3
-4. jquery.min.js – 3.2.1
-5. popper.js - 1.12.9
-6. bootstrap.min.js – v4.0.0-beta.3
-7. mdb.min.js – 4.4.1
+  - 1. Sass - 3.5.1
+  - 2. bootstrap.min.css – v4.0.0-beta.3
+  - 3. mdb.min.css – 4.4.3
+  - 4. jquery.min.js – 3.2.1
+  - 5. popper.js - 1.12.9
+  - 6. bootstrap.min.js – v4.0.0-beta.3
+  - 7. mdb.min.js – 4.4.1
