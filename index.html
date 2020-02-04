@@ -4,7 +4,8 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>One-Page Website Template</title>
+    <meta name="description" content="">
+    <title>Client Website Template</title>
 
     <!-- FAVICON -->
     <link rel="shortcut icon" href="/workbench/dist/images/favicon.ico">
@@ -15,66 +16,27 @@
     <!-- FONT AWESOME -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
 
-    <!-- CUSTOM CSS -->
-    <link rel="stylesheet" href="css/styles.css">
+    <!-- CUSTOM CSS OVERRIDES -->
+    <link rel="stylesheet" href="css/custom.css">
   </head>
 
   <body>
-    <!-- HEADER & NAV SECTION: https://getbootstrap.com/docs/4.0/components/navbar/#how-it-works/ -->
-    <header>
-        <!--
-            *** Breakpoint: https://getbootstrap.com/docs/4.0/layout/grid/#grid-options
-            *** Color Schemes (navbar-light + bg-light): https://getbootstrap.com/docs/4.0/components/navbar/#color-schemes
-            *** Sticky top: https://getbootstrap.com/docs/4.0/utilities/position/#sticky-top
-        -->
-        <nav class="navbar  navbar-expand-lg  navbar-light  bg-light  fixed-top"> <!-- navbar-expand-md breaks at 768 pixels -->
-
-            <!-- .navbar first child element should always be either .container or .container-fluid -->
-            <div class="container-fluid">
-                <a class="navbar-brand" href="index.html" title="Created by Mario Cisneros"><img src="img/logo.png" alt="" class="img-fluid"></a>
-
-                <!-- Toggle switch displays hamburger menu on smaller viewports, but hidden on large viewports -->
-                <button class="navbar-toggler  mx-2" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <!-- .collapse and .navbar-collapse for grouping and hiding navbar contents by a parent breakpoint -->
-                <div class="collapse navbar-collapse" id="navbar">
-                    <ul class="navbar-nav  ml-auto">
-                        <li class="nav-item  about"><a class="nav-link" href="#about">About</a></li>
-
-                        <!--Dropdown Menu: https://getbootstrap.com/docs/4.1/components/navbar/#nav -->
-                        <li class="nav-item  dropdown  products">
-                            <a class="nav-link  dropdown-toggle" href="#" id="dropdown" data-toggle="dropdown">Products</a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">To Be Determined</a></li>
-                                <li><a class="dropdown-item" href="#">To Be Determined</a></li>
-                                <li><a class="dropdown-item" href="#">To Be Determined</a></li>
-                            </ul>
-                        </li>
-
-                        <li class="nav-item  services"><a class="nav-link" href="#services">Services</a></li>
-                        <li class="nav-item  team"><a class="nav-link" href="#team">Team</a></li>
-                        <li class="nav-item  connect"><a class="nav-link" href="#connect">Connect</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    </header>
+    <!-- HEADER: https://getbootstrap.com/docs/4.0/components/navbar/#how-it-works/ -->
+    <!--#include virtual="includes/header.htm"-->
 
     <!-- CAROUSEL SECTION: https://getbootstrap.com/docs/4.1/components/carousel/ -->
-    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+    <div id="carouselExampleIndicators" class="carousel  slide  d-none  d-md-block" data-ride="carousel">
         <div class="carousel-inner">
             <div class="carousel-item active">
                 <img class="d-block w-100" src="img/carousel/background.png" alt="First slide">
                 <div class="carousel-caption">
                     <!--Display Headings: https://getbootstrap.com/docs/4.1/content/typography/#display-headings -->
-                    <h1 class="display-3">Newbie Web Services</h1>
-                    <h2 class="py-4">Managed Cloud Services</h2>
+                    <h1>Newbie Web Services</h1>
+                    <p class="h2">Client Website Template</p>
 
                     <!-- Buttons: https://getbootstrap.com/docs/4.1/components/buttons/ -->
                     <button class="btn  btn-outline-light  btn-lg" type="button">View Button</button>
-                    <button class="btn  btn-primary  btn-lg" type="button">Get Started</button>
+                    <button class="btn  btn-light  btn-lg" type="button">Get Started</button>
                 </div>
             </div>
 
@@ -98,65 +60,19 @@
         </a>
     </div>
 
-    <!--
-        *** JUMBOTRON: https://getbootstrap.com/docs/4.0/components/jumbotron/
-        *** COLLAPSE: https://getbootstrap.com/docs/4.1/components/collapse/
-    -->
-    <div class="jumbotron  jumbotron-fluid  mb-5">
-        <div class="container-fluid">
-            <div class="row  text-center">
-                <div class="col-xs-12  col-sm-12  col-md-9  col-lg-9  col-xl-8">
-                    <p class="lead">Newbie includes a vast array of tools with each hosting plan purchase and places no limitation on the amount or size of files directly pertaining to your website. If you&#39;re not completely satisfied, simply cancel within 30 Days for a full refund.</p>
-                </div>
-
-                <div class="col-xs-12  col-sm-12  col-md-3  col-lg-3 col-xl-4">
-                    <button class="btn  btn-success" type="button" data-toggle="collapse" data-target="#hosting">Web Hosting Services</button>
-                </div>
-            </div>
-
-            <div class="collapse" id="hosting">
-                <div class="row  text-center">
-                    <div class="col-sm-6 col-md-3">
-                        <i class="fa fa-server"></i>
-                    </div>
-
-                    <div class="col-sm-6 col-md-3">
-                        <i class="fa fa-desktop"></i>
-                    </div>
-
-                    <div class="col-sm-6 col-md-3">
-                        <i class="fa fa-database"></i>
-                    </div>
-
-                    <div class="col-sm-6 col-md-3">
-                        <i class="fa fa-archive"></i>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
     <!-- ABOUT SECTION: https://getbootstrap.com/docs/4.1/utilities/spacing/ -->
     <div class="container-fluid  my-lg-5  py-lg-5" id="about">
         <div class="row">
             <!--Hiding Elements: https://getbootstrap.com/docs/4.1/utilities/display/#hiding-elements -->
             <div class="col-lg-6">
-                <img src="img/computer.jpg" class="img-fluid  d-none  d-sm-block" alt="">
+                <img src="img/computer.jpg" class="img-fluid  d-none  d-lg-block" alt="">
             </div>
 
             <div class="col-lg-6">
                 <h2 class="display-4">About</h2>
                 <p class="lead">We know that greatness in a disruptive era requires bold ambition, curious talent and a culture that believes we&#39;re smarter together.</p>
-
                 <p>We approach every challenge holistically, with best&#45;in&#45;class expertise in data, creativity, media, technology search, social and more. We can help build and power our client&#39;s business.</p>
-
-                <p>Prism hella edison bulb, everyday carry squid meh four loko kombucha chambray la croix beard viral vegan kinfolk. Put a bird on it butcher migas gastropub marfa heirloom gochujang la croix drinking vinegar intelligentsia craft beer tilde helvetica shaman affogato. Leggings scenester iceland wayfarers. Knausgaard cliche tousled, XOXO etsy truffaut kinfolk disrupt pop-up vegan stumptown chillwave mustache helvetica selfies. Hell of flannel occupy kinfolk food truck helvetica. Fingerstache succulents XOXO farm-to-table tumeric. Polaroid activated charcoal heirloom hella skateboard bicycle rights shabby chic austin VHS pinterest tumeric tumblr.</p>
-
-                <p>Ennui street art typewriter aesthetic blog photo booth whatever irony unicorn. Put a bird on it portland photo booth literally you probably haven't heard of them salvia direct trade venmo.</p>
-
-                <p>Echo park sriracha microdosing lomo offal sustainable kale chips chillwave.</p>
-
-                <a href="#"><button type="button" class="btn  btn-primary">Learn More</button></a>
+                <a href="about.html" class="btn  btn-primary">Learn More</a>
             </div>
         </div>
     </div>
@@ -168,40 +84,21 @@
         <div class="row">
             <div class="col-lg-6">
                 <h2 class="display-4">Services</h2>
-
                 <p>Lorem ipsum dolor amet vHS butcher austin, ethical marfa sriracha poke godard brooklyn migas kickstarter. Fam 8-bit man bun art party tofu sustainable portland chicharrones. Vape YOLO gluten-free viral echo park.</p>
-
                 <p>Ennui street art typewriter aesthetic blog photo booth whatever irony unicorn. Put a bird on it portland photo booth literally you probably haven't heard of them salvia direct trade venmo.</p>
-
-                <!-- Vertical Nav: https://getbootstrap.com/docs/4.1/components/navs/ -->
-                <ul class="nav  flex-column  nav-pills  pt-3  pb-4">
-                    <li class="nav-item">
-                        <a class="nav-link active" href="#">Active</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
-                    </li>
-                </ul>
-
-                <p>Pickled gluten-free cardigan umami venmo. Hella pug echo park bitters adaptogen tousled narwhal selvage. Post-ironic affogato meh shabby chic vice subway tile heirloom fixie butcher banh mi. Four dollar toast typewriter blog, fashion axe four loko chillwave knausgaard. Flexitarian biodiesel four loko brunch trust fund celiac craft beer cornhole migas. Craft beer trust fund occupy pitchfork umami viral.</p>
-
-                <a href="#"><button type="button" class="btn  btn-primary">Learn More</button></a>
+                <a class="btn  btn-primary" href="services.html">Learn More</a>
             </div>
 
             <div class="col-lg-6">
-                <img src="img/desk.png" class="img-fluid  d-none  d-sm-block" alt="">
+                <img src="img/desk.png" class="img-fluid  d-none  d-lg-block" alt="">
             </div>
         </div>
     </div>
 
-    <!-- FIXED BACKGROUND -->
-    <div class="fixed-background-image  d-none  d-sm-block"></div>
+    <hr class="my-4">
 
     <!-- MEET THE TEAM & CARDS SECTION -->
-    <div class="container-fluid  mt-lg-5  pt-lg-5" id="team">
+    <div class="container-fluid  mt-lg-4  mb-lg-5  py-lg-5" id="team">
         <div class="row  welcome  text-center">
             <div class="col-12">
                 <h2 class="display-4  pb-4">Meet the Team</h2>
@@ -209,10 +106,10 @@
         </div>
 
         <div class="row">
-            <div class="col-md-4">
+            <div class="col-lg-4  mt-4">
                 <!-- Cards: https://getbootstrap.com/docs/4.1/components/card/ -->
                 <div class="card">
-                    <img src="img/syd-barrett.jpg" class="card-img-top" alt="">
+                    <img src="img/team/syd-barrett.jpg" class="card-img-top" alt="">
                     <div class="card-body">
                         <h3 class="card-title">Syd Barrett</h3>
                         <p class="card-text">Syd is an Internet entrepreneur with 20 years of experience.</p>
@@ -221,9 +118,9 @@
                 </div>
             </div>
 
-            <div class="col-md-4">
+            <div class="col-lg-4  mt-4">
                 <div class="card">
-                    <img src="img/david-gilmour.jpg" class="card-img-top" alt="">
+                    <img src="img/team/david-gilmour.jpg" class="card-img-top" alt="">
                     <div class="card-body">
                         <h3 class="card-title">David Gilmour</h3>
                         <p class="card-text">David is a server admin with 12 years of network experience.</p>
@@ -232,9 +129,9 @@
                 </div>
             </div>
 
-            <div class="col-md-4">
+            <div class="col-lg-4  mt-4">
                 <div class="card">
-                    <img src="img/roger-waters.jpg" class="card-img-top" alt="">
+                    <img src="img/team/roger-waters.jpg" class="card-img-top" alt="">
                     <div class="card-body">
                         <h3 class="card-title">Roger Watters</h3>
                         <p class="card-text">Roger is an database engineer with 10 years of experience.</p>
@@ -245,41 +142,8 @@
         </div>
     </div>
 
-    <!-- BOOTSTRAP SECTION -->
-    <div class="container-fluid  my-lg-5  py-lg-5">
-        <div class="row  text-center  welcome">
-            <div class="col-12">
-                <h2 class="display-4">Site built with Bootstrap</h2>
-            </div>
-
-            <div class="col-12">
-                <p class="lead  pb-4">Bootstrap is an open source toolkit for developing with HTML, CSS, and JS to build responsive, mobile-first projects on the web.</p>
-            </div>
-        </div>
-
-        <div class="row  text-center">
-            <div class="col-xs-12 col-sm-12 col-md-4">
-                <i class="fa fa-code  orange  pb-4"></i>
-                <h3>HTML5</h3>
-                <p>Built with the latest version of HTML5</p>
-            </div>
-
-            <div class="col-xs-12 col-sm-12 col-md-4">
-                <i class="fa fa-code purple  pb-4"></i>
-                <h3>CSS3/Sass</h3>
-                <p>Built with the latest version of CSS3 and Sass</p>
-            </div>
-
-            <div class="col-xs-12 col-sm-12 col-md-4">
-                <i class="fa fa-code blue  pb-4"></i>
-                <h3>JavaScript</h3>
-                <p>Built with the latest version of ECMAScript 2017</p>
-            </div>
-        </div>
-    </div>
-
     <!-- SOCIAL MEDIA SECTION -->
-    <div class="container-fluid  py-5  social"  id="connect">
+    <div class="container-fluid  mt-4  mt-md-5  py-5  social"  id="connect">
         <div class="row text-center">
             <div class="col-12">
                 <h2 class="display-4">Connect</h2>
@@ -296,74 +160,7 @@
     </div>
 
     <!-- FOOTER SECTION -->
-    <footer class="container-fluid">
-        <div class="row">
-            <div class="col-md-12  col-lg-6  col-xl-3">
-                <h4>Corporate Office</h4>
-                <ul>
-                    <li>555-555-5555</li>
-                    <li>email@gmail.com</li>
-                    <li>100 Morrison Blvd</li>
-                    <li>Dallas, TX 75002</li>
-                </ul>
-            </div>
+    <!--#include virtual="includes/footer.htm"-->
 
-            <div class="col-md-12  col-lg-6  col-xl-3">
-                <h4>Hours of Operation</h4>
-                <ul>
-                    <li>Monday &#45; Thursday: 8am &#45; 6pm</li>
-                    <li>Friday: 9am &#45; 5pm</li>
-                    <li>Saturday: 10am &#45; 4pm</li>
-                    <li>Sunday: closed</li>
-                </ul>
-            </div>
-
-            <div class="col-md-12  col-lg-6  col-xl-3">
-                <h4>Service Areas</h4>
-                <ul>
-                    <li>Austin, Texas, 78610</li>
-                    <li>Dallas, Texas, 75013</li>
-                    <li>Houston, Texas, 77002</li>
-                    <li>San Antonio, Texas, 78201</li>
-                </ul>
-            </div>
-
-            <div class="col-md-12  col-lg-6  col-xl-3">
-                <h4>Tutorials</h4>
-                <ul>
-                    <li><a href="https://www.youtube.com/watch?v=hnCmSXCZEpU" target="_blank">Free Crash Course | DesignCourse</a></li>
-                    <li><a href="https://coursetro.com/posts/code/130/Learn-Bootstrap-4-Final-in-2018-with-our-Free-Crash-Course" target="_blank">Free Crash Course Documentation | Gary Simon</a></li>
-                    <li><a href="https://www.youtube.com/watch?v=9cKsq14Kfsw" target="_blank">Responsive Bootstrap Website | Drew Ryan</a></li>
-                </ul>
-            </div>
-        </div>
-    </footer>
-
-    <!-- Socket Section -->
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-md-12  text-center  socket">
-                <p>2018 &copy; Newbie Web Services</p>
-            </div>
-        </div>
-    </div>
-
-    <!-- SCRIPTS SECTION
-        *** popper.js controls dropdowns, popovers and tooltips
-    -->
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
-
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
-
-        <script>
-            $('.carousel').carousel({
-            pause: true,
-            interval: false
-            });
-        </script>
-
-    <!-- Git Bash: cd c:\websites/beta/workbench/bootstrap/examples/newbie -->
   </body>
 </html>
