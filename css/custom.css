@@ -3,38 +3,85 @@ Author: Mario S. Cisneros, P: 469 484 6839
 URI: http://beta.mariocisneros.me/projects/newbie/
 CSS: Global Stylesheet
 Project: Bootstrap Client Project Template
-Last Modified Date: 8.18.2018
+Last Modified Date: 2.3.2020
 -------------------------------------------------------------- */
 body {
-  color: #222;
-  font-family: helvetica, verdana, arial, sans-serif;
-  margin: 5.65rem 0 0; }
+    color: #222;
+    font-family: helvetica, verdana, arial, sans-serif;
+    margin: 5.65rem 0 0;
+}
 
+
+
+
+
+/* Header
+-------------------------------------------------- */
+.navbar {
+    padding: 2rem 0;
+}
+
+.navbar .nav-link {
+    font-size: 1.25rem;
+    padding-left: 1rem !important;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #6648b1;
+}
+
+.navbar-light .navbar-nav .nav-link:focus,
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #000;
+}
+
+.navbar-light .navbar-brand {
+    color: #444;
+    font-size: 48px;
+}
+
+
+
+
+
+/* BANNER SECTION
+------------------------------------ */
 .banner {
-  background: #222 url("../img/carousel/background.png") center no-repeat;
-  background-size: cover;
-  min-height: 500px;
-  display: flex;
-  justify-content: center;
-  align-items: center; }
-  .banner .intro {
+    background: #222 url("../img/carousel/background.png") center no-repeat;
+    background-size: cover;
+    min-height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner .intro {
     background: rgba(0, 0, 0, 0.5);
     border-radius: 5px;
     color: #fff;
     padding: 2rem 0 1rem;
     text-align: center;
-    width: 90%; }
-    .banner .intro p {
-      font: 500 2rem helvetica, sans-serif;
-      text-shadow: 1px 1px 10px #000; }
+    width: 90%;
+}
+
+.banner .intro p {
+    font: 500 2rem helvetica, sans-serif;
+    text-shadow: 1px 1px 10px #000;
+}
 
 #about .banner {
-  background: #222 url("../img/banners/about.jpg") center no-repeat;
-  min-height: 300px; }
+    background: #222 url("../img/banners/about.jpg") center no-repeat;
+    min-height: 300px;
+}
 
 #contact .banner {
-  background: #222 url("../img/banners/contact.jpg") center no-repeat;
-  min-height: 300px; }
+    background: #222 url("../img/banners/contact.jpg") center no-repeat;
+    min-height: 300px;
+}
+
+
+
+
 
 /* CLASS SELECTOR RULESETS
 ------------------------------------ */
@@ -51,6 +98,10 @@ body {
 
 .img-fluid {
   border-radius: 8px; }
+
+
+
+
 
 /* SOCIAL
 ------------------------------------------- */
@@ -99,39 +150,34 @@ body {
 .warning {
   color: #f0ad4e; }
 
-/* Header - Overrides | Updated August 15, 2018
--------------------------------------------------- */
-.navbar {
-  padding: 1rem 0; }
-  .navbar .nav-link {
-    font-size: 1.25rem;
-    padding-left: 1rem !important; }
 
-.navbar-light .navbar-nav .nav-link:focus,
-.navbar-light .navbar-nav .nav-link:hover {
-  color: #563d7c; }
-.navbar-light .navbar-brand {
-  color: #18232f; }
 
-/* HOMEPAGE - OVERRIDES | UPDATED AUGUST 17, 2018
+
+
+/* HOMEPAGE
 ---------------------------------------------------- */
 .carousel {
-  margin-top: 5.65rem; }
+    margin-top: 5.65rem;
+}
 
 .carousel-caption {
-  top: 30%; }
+    top: 38%;
+}
 
 .carousel-item {
   transition: -webkit-transform 0.5s ease;
   transition: transform 0.5s ease;
   transition: transform 0.5s ease, -webkit-transform 0.5s ease;
   -webkit-backface-visibility: visible;
-  backface-visibility: visible; }
+  backface-visibility: visible;
+}
 
-/* Typography - Overrides | Update August 17, 2018
-### https://developer.mozilla.org/en-US/docs/Learn/CSS/Styling_text/Fundamentals
-### https://github.com/AdamMarsden/simple-typography/blob/master/style.scss
------------------------------------------------------------------------------------ */
+
+
+
+
+/* Typography
+---------------------------------------------------- */
 h1 {
   font-size: 3.5rem;
   padding: 0;
@@ -155,7 +201,11 @@ a {
   a:hover {
     color: #563d7c; }
 
-/* Custom Button - Overrides | Updated 8.15.2018
+
+
+
+
+/* Custom Button
 --------------------------------------------------- */
 .btn {
   color: #fff;
@@ -181,72 +231,116 @@ a {
 .btn-light {
   color: #000; }
 
-/* Footer - Overrides | Updated August 17, 2018
+
+
+
+
+/* Footer - Overrides | Updated February 3, 2020
 -------------------------------------------------- */
 footer {
-  background-color: #563d7c;
-  color: #fff;
-  font-size: 0.8em;
-  overflow: hidden;
-  padding: 2rem 0;
-  position: relative;
-  width: 100%; }
-  footer p {
+    background-color: #563d7c;
+    color: #fff;
+    overflow: hidden;
+    padding: 3rem 0;
+    position: relative;
+    width: 100%;
+}
+
+footer h6 {
+    margin-bottom: 1.5rem;
+}
+
+footer p {
     line-height: 1.75;
-    margin: 1rem 0; }
-  footer ul {
     margin: 1rem 0;
-    padding: 0; }
-  footer ul li {
+}
+
+footer ul {
+    margin: 1rem 0;
+    padding: 0;
+}
+
+footer ul li {
     display: inline;
-    list-style: none; }
-  footer hr {
-    border-top: 1px solid #DADADA; }
-  footer a {
+    list-style: none;
+}
+
+footer hr {
+    border-top: 1px solid #DADADA;
+}
+
+footer a {
     color: #fff;
     padding: 0;
-    text-decoration: none; }
-  footer a:hover {
+    text-decoration: none;
+}
+
+footer a:hover {
     background: transparent;
     color: #e7d7ff;
-    text-decoration: underline; }
-  footer .title {
+    text-decoration: underline;
+}
+
+footer h6 {
     color: #e7d7ff;
-    text-transform: uppercase; }
-  footer .contact li {
+    font-weight: 300;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+}
+
+footer .contact li {
     display: block;
     line-height: 2;
-    list-style-type: none; }
-  footer .resources li,
-  footer .related li {
+    list-style-type: none;
+}
+
+footer .resources li,
+footer .related li {
     display: list-item;
     line-height: 2;
     list-style-type: disc;
-    margin-left: 1rem; }
-  footer .fa, footer .fas {
+    margin-left: 1rem;
+}
+
+footer .fa, footer .fas {
     color: #e7d7ff;
-    font-size: 1rem; }
+    font-size: 1rem;
+}
+
 
 /* COPYRIGHT AND LEGAL SECTION
 ---------------------------------------------- */
 .copyright {
-  color: #7d8990; }
+    color: #7d8990;
+}
 
 .legal a {
-  color: #7d8990;
-  padding: 0; }
+    color: #7d8990;
+    padding: 0;
+}
+
 .legal ul {
-  margin: 0;
-  padding: 0; }
+    margin: 0;
+    padding: 0;
+}
+
 .legal li {
-  display: inline; }
+    display: inline;
+}
 
 .socket {
-  background-color: #fff;
-  padding-top: 2rem;
-  padding-bottom: 2rem; }
-  .socket p {
-    margin-bottom: 0; }
+    background-color: #fff;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.socket p {
+    margin-bottom: 0;
+}
+
+
+
+
 
 /* Media Queries - Overrides | Updated August 16, 2018
 
@@ -266,37 +360,52 @@ Extra (xl) large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) { ... }
 --------------------------------------------------------- */
 @media (min-width: 320px) {
-  .navbar-expand-lg > .container,
-  .navbar-expand-lg > .container-fluid {
-    padding-right: 15px;
-    padding-left: 15px; }
+    .navbar-expand-lg > .container,
+    .navbar-expand-lg > .container-fluid {
+        padding-right: 15px;
+        padding-left: 15px;
+    }
 
-  h2.display-4 {
-    font-size: 2rem; }
+    h2.display-4 {
+        font-size: 2rem;
+    }
 
-  .social {
-    font-size: 2rem; }
+    .social {
+        font-size: 2rem;
+    }
+
     .social a i {
-      padding: 0 .5rem; } }
+        padding: 0 .5rem;
+    }
+}
+
 @media (min-width: 576px) {
-  h2.display-4 {
-    font-size: 2.5rem; }
+    h2.display-4 {
+        font-size: 2.5rem;
+    }
 
-  .social {
-    font-size: 4rem; }
+    .social {
+        font-size: 4rem;
+    }
+
     .social a i {
-      padding: 0 1rem; }
+        padding: 0 1rem;
+    }
 
-  .navbar-brand {
-    font-size: 2rem; } }
+    .navbar-brand {
+        font-size: 2rem;
+    }
+}
+
 @media (min-width: 768px) {
-  .carousel-caption h1 {
-    font-size: 2rem; } }
-@media (min-width: 992px) {
-  .carousel-caption h1 {
-    font-size: 3rem; } }
-@media (min-width: 1200px) {
-  .carousel-caption h1 {
-    font-size: 4rem; } }
+    .carousel-caption h1 {
+        font-size: 2rem;
+    }
+}
 
-/*# sourceMappingURL=styles.css.map */
+@media (min-width: 992px) {
+    .carousel-caption h1 {
+        font-size: 3rem;
+        margin-bottom: 1rem;
+    }
+}
